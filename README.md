@@ -1,8 +1,8 @@
 # TOP Practice Project
 
-## Basic form Built with Express, EJS and validation with Epxress-validatator
+## Basic form Built with Express, EJS and validation with Express-validator
 
-This project has a form where users can view, add, update or delete data. It is built using **Express** for the backend and **EJS** for rendering the views. Data is validated with the use of **Epxress-validatator**
+This project has a form where users can view, add, update or delete data. It is built using **Express** for the backend and **EJS** for rendering the views. Data is validated with the use of **Express-validator**
 
 ### Features:
 
@@ -15,4 +15,4 @@ This project has a form where users can view, add, update or delete data. It is 
 
 - **Express**: For server-side routing and handling requests
 - **EJS**: For rendering dynamic views
-- **Expres-validator**: For validation of the input
+- **Express-validator**: For validation of the input
