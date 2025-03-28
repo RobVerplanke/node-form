@@ -2,7 +2,7 @@
 
 ## Basic form Built with Express, EJS and validation with Express-validator
 
-This project has a form where users can view, add, update or delete data. It is built using **Express** for the backend and **EJS** for rendering the views. Data is validated with the use of **Express-validator**
+This project has a form where users can view, add, update, delete or search (via query) data. It is built using **Express** for the backend and **EJS** for rendering the views. Data is validated with the use of **Express-validator**
 
 ### Features:
 
@@ -10,6 +10,7 @@ This project has a form where users can view, add, update or delete data. It is 
 - Add new data via a form
 - Edit existing data via a form
 - Delete existing data
+- Search data using a query in the url
 
 ### Technologies Used:
 

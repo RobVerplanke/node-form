@@ -102,3 +102,22 @@ exports.usersDeletePost = (req, res) => {
   usersStorage.deleteUser(req.params.id);
   res.redirect('/');
 };
+
+exports.usersSearchGet = (req, res) => {
+  const alUsers = usersStorage.getUsers();
+
+  const user = alUsers.find((user) => {
+    return (
+      user.firstName === req.query.firstName ||
+      user.lastName === req.query.lastName ||
+      user.email === req.query.email
+    );
+  });
+
+  if (user) {
+    res.render('search.ejs', { title: 'Search result', user: user });
+    return;
+  } else {
+    res.send('User not found');
+  }
+};

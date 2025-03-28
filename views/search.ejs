@@ -6,7 +6,7 @@
   <body>
     <h1><%= title %></h1>
     <ul>
-      <% if (locals.users) {%> <% users.forEach(user => { %>
+      <% if (user) {%>
       <li>
         ID: <%= user.id %>, Name: <%= user.firstName %> <%= user.lastName %>,
         E-mail: <%= user.email %>, Age: <%= user.age %>, Bio: <%= user.bio %>
@@ -24,21 +24,7 @@
           Delete
         </button>
       </form>
-      <% }); %> <% } %>
+      %> <% } %>
     </ul>
-    <a href="/create">Create a user</a>
-    <h3>Search user</h3>
-    <form action="/search" method="GET">
-      <label for="firstName">First Name: </label>
-      <input type="text" name="firstName" id="firstName" />
-
-      <label for="lastName">Last Name: </label>
-      <input type="text" name="lastName" id="lastName" />
-
-      <label for="email">E-mail: </label>
-      <input type="email" name="email" id="email" />
-
-      <button type="submit">Search</button>
-    </form>
   </body>
 </html>
